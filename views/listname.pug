@@ -4,4 +4,9 @@ form(action="/listname/search",method="GET")
     button Check Name
 ul
     each name in names 
-        li= name.name
+        li
+            span= name.name
+            span &nbsp
+            a(href="/listname/" + name.id)     View
+
+a(href="/listname/create") create a new name
