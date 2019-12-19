@@ -1,14 +1,19 @@
 extends ./layouts/common.pug
 block content  
     h1 List Name
-    form(action="/listname/search",method="GET")
-        input(type="text",name="q",class="btn btn-info")
-        button(class="btn btn-primary ml-2") Check Name
-    ul
-        each name in names 
-            li
-                span= name.name
-                span &nbsp
-                a(href="/listname/" + name.id)     View
+    form.d-flex(action="/listname/search",method="GET")
+        input.form-control(type="text",name="q")
+        button(class="btn btn-primary ml-2") Search
 
-    a(href="/listname/create") create a new name
+    table.table
+        tr
+            th Name
+            th Phone
+            th Actions
+        each name in names 
+            tr
+                td=name.name
+                td=name.phone
+                td 
+                    a(href="/listname/" + name.id)     View
+    a.btn.btn-primary(href="/listname/create") Create a new name
