@@ -1,12 +1,14 @@
-h1 List Name
-form(action="/listname/search",method="GET")
-    input(type="text",name="q")
-    button Check Name
-ul
-    each name in names 
-        li
-            span= name.name
-            span &nbsp
-            a(href="/listname/" + name.id)     View
+extends ./layouts/common.pug
+block content  
+    h1 List Name
+    form(action="/listname/search",method="GET")
+        input(type="text",name="q",class="btn btn-info")
+        button(class="btn btn-primary ml-2") Check Name
+    ul
+        each name in names 
+            li
+                span= name.name
+                span &nbsp
+                a(href="/listname/" + name.id)     View
 
-a(href="/listname/create") create a new name
+    a(href="/listname/create") create a new name
