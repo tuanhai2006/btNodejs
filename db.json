@@ -1,14 +1,14 @@
 {
   "names": [
     {
-      "name": "Hoàng Thị Thanh",
-      "phone": "0379123473",
-      "id": "d6WJOosm"
-    },
-    {
       "name": "Lê Văn Dũng",
       "phone": "0376452894",
       "id": "i09aqJp3"
+    },
+    {
+      "name": "Hoàng Thị Thanh",
+      "phone": "0379123473",
+      "id": "d6WJOosm"
     },
     {
       "name": "Lê Tuấn  Chung",
@@ -18,7 +18,14 @@
     {
       "name": "Lê Tuấn Hải",
       "phone": "0379123473",
-      "id": "ltCH5L-1"
+      "id": "ltCH5L-1",
+      "email": "tuanhai2006",
+      "pass": "2006"
+    },
+    {
+      "name": "tuan hai",
+      "phone": "0333032714",
+      "id": "vxxhfCha"
     }
   ]
 }
